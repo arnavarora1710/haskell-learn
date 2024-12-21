@@ -1,0 +1,26 @@
+#+title: Basics of Haskell
+#+description: Notes on getting started with Haskell.
+#+author: Arnav Arora
+
+* Haskell Intro
+- Lazy, functional PL
+  - *What is functional?*
+    - First-class functions which means they can be used the same as any other values
+    - Rather than executing instructions, you want to evaluate expressions
+- Expressions here are /referentially transparent/
+  - Everything is *immutable*
+  - Expressions never have “side effects” (like updating global variables or printing to the screen)
+- Comes with a lot of pros opposed to imperative programming
+  - Can get a lot of automated reasoning tasks done
+  - When functions are independent, you can eval in parallel
+
+** Laziness
+- Expressions are not evaluated until needed
+  How does that help?
+  1. Define new control structures
+  2. Infinite data structures are possible
+Reasoning about time and space usage is complicated!
+
+- Statically typed language
+  - Meaning types are checked at compile time
+  - Type errors would make a program not compile
